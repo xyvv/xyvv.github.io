@@ -1,0 +1,169 @@
+
+:root{
+  --lbg: #D5E2E7;    /*lightmode background*/
+  --lt: #3F5473;     /*lightmode text*/
+  --lt_hl: #75ADD6;  /*lightmode text hover highlight*/
+
+  --basicallywhite: #FFFFF9;
+
+  --bg: #D5E2E7;
+  --text: #3F5473;
+  --text_highlight: #75ADD6;
+
+  --almostwhite: #f6fbff;
+  --medblue: #5f9ab8;
+  --almostblack: #061b29;
+
+  --lightlightblue:#e9f1f2;
+  --lightlightpink:#fcedeb;
+  --lightcyan: #D0ECED;
+  --opal: #9EC3C7;
+  --babypink: #F2C5BD;
+  --darkgrey: #4E4B4B;
+  --lightgrey: #868686;
+}
+
+/*CSS GRID FORMATING---------------------------*/
+.grid{
+  display:grid;
+
+  padding: 2%;
+  grid-template-columns: 1fr;
+  min-height: 20vh;
+
+}
+
+/*---------------------------*/
+
+.col{
+  display:grid;
+
+  grid-template-columns: 1fr 4fr 0.8fr;
+  padding-top: 2%;
+
+}
+
+/* FONTS-------------------------------*/
+
+.title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 56px;
+  letter-spacing: 0.08em;
+  color: var(--lt);
+}
+
+h1{
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  /*line-height: 1.2em;*/
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+}
+
+
+.text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  line-height: 1.2em;
+  color:var(--almostblack); /*almostblack*/
+}
+
+.para{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  color:var(--almostblack);/*almostblack*/
+}
+
+/*LINKS-------------------------------*/
+a:link {
+  text-decoration: none;
+  color:var(--almostblack); /*almostblack*/
+}
+
+a:visited{
+  color: var(--almostblack);
+}
+
+a:hover{
+  color: var(--opal); /*medblue*/
+}
+
+/*SVGS----------------------*/
+.icon:hover{
+  color: var(--opal); /*medblue*/
+}
+
+.icon{
+  vertical-align: middle;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  filter: opacity(100%);
+  
+}
+
+/*About + experience toggles*/
+
+#up1, #up2{
+  display: inline-block;
+
+}
+#down1, #down2, #aboutP, #exP{
+  display: none;
+}
+
+#aboutP{
+  background-color: var(--lightlightblue); 
+  border-radius: 5px;
+}
+
+
+#exP{
+  background-color: var(--lightlightblue);
+  border-radius: 5px;
+}
+
+
+.middleBlock{
+  padding-left: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1.5em;
+}
+
+#middleImage{
+  min-height: 280px;
+  background-image: url("/assets/long2.png");
+  background-size: cover;
+  background-position: center; 
+
+}
+
+.gdDisplay{
+  width:100%;
+
+}
+
+
+/*MOBILE ---------------------------------*/
+@media (max-width: 767px) {
+  .sidenav {
+  padding-top: 2.5%;
+  padding-left: 2.5%;
+  }
+
+.text {
+  font-size: 16px;
+}
+
+.title{
+  font-size:32px;
+}
+}
